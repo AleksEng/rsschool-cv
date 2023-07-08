@@ -536,3 +536,37 @@ body {
   position: relative;
   justify-content: space-evenly;
 }
+
+.footer {
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 995px;
+  background-color: rgba(34, 34, 46, 1);
+  padding: 10px 25px 10px 25px;
+}
+
+.footer a {
+  height: 100%;
+  cursor: pointer;
+}
+
+.footer__a {
+  width: 40px;
+}
+
+.footer__span {
+  position: relative;
+  top: 8px;
+  left: -23px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF; 
+}
