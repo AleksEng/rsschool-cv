@@ -286,3 +286,253 @@ body {
   margin-bottom: 20px;
   background: #FFC905;
 }
+
+.main {
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 465px 530px;
+  grid-template-areas: 
+  "education work"
+  "education work"
+  "education code"
+  "scills code"
+  "scills projects"
+  "language projects"
+  "contacts projects"
+  "contacts hobbies";
+  width: 995px;
+  background-color: rgba(41, 41, 53, 1);
+}
+
+.education {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  grid-area: education;
+  background-color: rgba(41, 41, 53, 1);
+}
+
+.scills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  grid-area: scills;
+  background-color: rgba(41, 41, 53, 1);
+}
+
+.scills__list li {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF; 
+}
+
+.language {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  grid-area: language;
+  background-color: rgba(41, 41, 53, 1);
+}
+
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  grid-area: contacts;
+  bottom: 0px;
+  padding-left: 25px;
+  background-color: rgba(41, 41, 53, 1);
+}
+
+.contacts__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 228px;
+  overflow: hidden;
+}
+
+.contacts__block {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  width: 80px;
+  max-width: 60px;
+  height: 100%;
+  background: #FFC905;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 22px;
+  padding-bottom: 17px;
+}
+
+.contacts__block__list {
+  position: relative;
+  height: 228px;
+  top: 40px;
+  left: 20px;
+}
+
+.contacts__list li {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF; 
+}
+
+.work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  grid-area: work;
+  background-color: rgba(34, 34, 46, 1);
+}
+
+.code {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  grid-area: code;
+  padding-left: 25px;
+  background-color: rgba(34, 34, 46, 1);
+}
+
+.code__style {
+  color:#A9B7C6;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.code__orange {
+  color: #CC7832;
+}
+
+.code__yellow {
+  color: #E8BF6A;
+}
+
+.code__blue {
+  color: #6897BB;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  grid-area: projects;
+  padding-left: 25px;
+  background-color: rgba(34, 34, 46, 1);
+}
+
+.project__item {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 402px;
+  height: 200px;
+  border: 2px solid #FFC905;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.project__img {
+  width: 100%;
+  max-width: 402px;
+  height: 200px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.project__item:hover .project__img{
+  scale: 1.1;
+  transition: all 0.5s ease;
+}
+
+.project__discaption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: calc(50% - 70px / 2);
+  left: -200px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF; 
+  transition: all 0.5s ease;
+}
+
+.project__item:hover {
+  background-color: #1E1E1E;
+  z-index: 5;
+}
+
+.project__item:hover > .project__discaption {
+  top: calc(50% - 70px / 2);
+  left: 20px;
+  color: #FFC905;
+  text-shadow: 1px 1px 1px #000;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.discaption__svg {
+  width: 30px;
+  height: 30px;
+}
+
+.hobbies {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  grid-area: hobbies;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgba(34, 34, 46, 1);
+}
+
+.hobbies__list {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
