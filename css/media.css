@@ -1,42 +1,53 @@
-@media (max-width: 465px) {
+@media (max-width: 994px) {
+  .name__name {
+    font-size: calc(33px + (11 + 11 * 2) * ((100vw - 675px) / 995));
+  }
+
+  .name__pos {
+    font-size: calc(20px + (2 + 2 * 2) * ((100vw - 675px) / 995));
+  }
+}
+
+@media (max-width: 675px) {
+  .name__name {
+    font-size: 29px;
+  }
+
   .header {
-    grid-template-columns: 465px;
-    grid-template-areas: 
-    "name"
-    "photo"
-    "about";
-    grid-template-rows: 165px 465px 260px;
-    width: 100%px;
-    max-width: 465px;
+    grid-template-columns: minmax(320px, 675px);
+    grid-template-areas:
+      "name"
+      "photo"
+      "about";
+    grid-template-rows: 165px 465px max-content;
+    width: 100%;
+    max-width: 675px;
   }
 
   .photo {
     grid-area: photo;
-    width: 465x;
-  }
-
-  .name {
-    grid-area: name;
-    width: 465px;
+    width: 100%;
+    max-width: 675px;
+    background: #ffffff;
   }
 
   .about {
-    grid-area: about;
-    width: 465px;
+    padding-right: 0px;
+    padding-top: 20px;
   }
 
   .main {
-    grid-template-columns: 465px;
-    width: 465px;
-    grid-template-areas: 
-    "education"
-    "scills"
-    "language"
-    "work"
-    "code"
-    "projects"
-    "hobbies"
-    "contacts";
+    grid-template-columns: minmax(320px, 675px);
+    max-width: 675px;
+    grid-template-areas:
+      "education"
+      "scills"
+      "language"
+      "work"
+      "code"
+      "projects"
+      "hobbies"
+      "contacts";
   }
 
   .work,
@@ -50,15 +61,37 @@
     padding-top: 0px;
   }
 
-  .code__style {
-    font-size: 12px;
-  }
-
   .hobbies {
     padding-bottom: 20px;
   }
 
   .footer {
-    width: 465px;
+    width: 100%;
+    max-width: 675px;
+  }
+
+  .about,
+  .education,
+  .scills,
+  .language,
+  .contacts,
+  .work,
+  .code,
+  .projects,
+  .hobbies {
+    padding-left: calc(15px + (10 + 10 * 2) * ((100vw - 320px) / 675));
+  }
+
+  .subheading,
+  .projects {
+    padding-right: calc(15px + (10 + 10 * 2) * ((100vw - 320px) / 675));
+  }
+
+  .contacts__block__list {
+    left: 15px;
+  }
+
+  .contacts__list li {
+    font-size: 18px;
   }
 }
