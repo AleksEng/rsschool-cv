@@ -1,0 +1,64 @@
+@media (max-width: 465px) {
+  .header {
+    grid-template-columns: 465px;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "about";
+    grid-template-rows: 165px 465px 260px;
+    width: 100%px;
+    max-width: 465px;
+  }
+
+  .photo {
+    grid-area: photo;
+    width: 465x;
+  }
+
+  .name {
+    grid-area: name;
+    width: 465px;
+  }
+
+  .about {
+    grid-area: about;
+    width: 465px;
+  }
+
+  .main {
+    grid-template-columns: 465px;
+    width: 465px;
+    grid-template-areas: 
+    "education"
+    "scills"
+    "language"
+    "work"
+    "code"
+    "projects"
+    "hobbies"
+    "contacts";
+  }
+
+  .work,
+  .code,
+  .projects,
+  .hobbies {
+    background-color: rgba(41, 41, 53, 1);
+  }
+
+  .work {
+    padding-top: 0px;
+  }
+
+  .code__style {
+    font-size: 12px;
+  }
+
+  .hobbies {
+    padding-bottom: 20px;
+  }
+
+  .footer {
+    width: 465px;
+  }
+}
